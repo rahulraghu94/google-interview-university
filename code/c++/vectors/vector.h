@@ -15,5 +15,8 @@ void vector_set(Vector *vector, int index, int value);
 void vector_destroy(Vector *vector);
 void vector_double(Vector *vector);
 void vector_append(Vector *vector, int value);
+int vector_isempty(Vector *vector);
+void vector_delete(Vector * vector, int index);
+int vector_find(Vector *vector, int value);
 
 #endif

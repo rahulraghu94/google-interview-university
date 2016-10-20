@@ -47,3 +47,33 @@ void vector_destroy(Vector *vector)
 	printf("Destroying array...\n");
 	free(vector->data);
 }
+
+int vector_isempty(Vector *vector)
+{
+	if(vector->size == 0)
+		return 1;
+	return 0;
+
+}
+
+void vector_delete(Vector * vector, int index)
+{
+	if (index > vector->size){
+		printf("Element out of bounds");
+		return;
+	}
+
+	vector->data[index] = 0;
+}
+
+int vector_find(Vector *vector, int value)
+{
+	int i;
+
+	for (i = 0; i < vector->size; i++){
+		if(vector->data[i] == value)
+			return i;
+	}
+
+	return -1;
+}
