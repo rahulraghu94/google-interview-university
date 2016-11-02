@@ -78,3 +78,35 @@ int find_height(bstnode *root)
 
 	return max(find_height(root->left), find_height(root->right)) +1;
 }
+
+void inorder(bstnode *root)
+{
+	if(root == NULL)
+		return;
+
+	inorder(root->left);
+	cout << root->key << "\t" ;
+	inorder(root->right);
+}
+
+void preorder(bstnode *root)
+{
+	if(root == NULL)
+		return;
+
+	cout << root->key << "\t" ;
+	preorder(root->left);
+	preorder(root->right);
+
+}
+
+void postorder(bstnode *root)
+{
+	if(root == NULL)
+		return;
+
+	postorder(root->left);
+	postorder(root->right);
+	cout << root->key << "\t" ;
+
+}

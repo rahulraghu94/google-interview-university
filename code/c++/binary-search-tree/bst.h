@@ -22,4 +22,18 @@ int find_max(bstnode *root);
  */
 int find_height(bstnode *root);
 
+/*
+ * Traversals:
+ * Depth First Traversals:
+ * 	1. Inorder
+ * 	2. Preorder
+ * 	3. postorder
+ * Breadth First:
+ * 	1. Levelorder Traversal
+ */
+void inorder(bstnode *root);
+void preorder(bstnode *root);
+void postorder(bstnode *root);
+
+
 #endif

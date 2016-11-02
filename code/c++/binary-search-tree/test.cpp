@@ -27,5 +27,14 @@ int main()
 	cout << "Maximum: " << find_max(root) << endl;
 	cout << "Height of the tree: " << find_height(root) << endl;
 
+
+	cout << endl << endl << "Traversals: " << endl;
+	cout << "Inorder: " << endl;
+	inorder(root);
+	cout << endl << "Preorder: " << endl;
+	preorder(root);
+	cout << endl << "Postorder: " << endl;
+	postorder(root);
+
 	return 0;
 }
