@@ -15,14 +15,16 @@ int main()
 	root = insert(root, 8);
 	root = insert(root, 12);
 
-	cout << "Search Key: " << endl;
-	cin >> key;
+	cout << "Searching for key = 25: " << endl;
 
-	if(search(root, key)){
+	if(search(root, 25)){
 		cout<< "Element found!" << endl;
 	} else {
 		cout << "Element not found :(" << endl;
 	}
+
+	cout << "Minimum: " << find_min(root) << endl;
+	cout << "Maximum: " << find_max(root) << endl;
 
 	return 0;
 }

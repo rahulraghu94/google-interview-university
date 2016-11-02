@@ -39,3 +39,33 @@ int search(bstnode *root, int key)
 		return search(root->left, key);
 	}
 }
+
+int find_min(bstnode *root)
+{
+	struct bstnode* cur = root;
+
+	if(root == NULL){
+		cout << "Tree is empty!" << endl;
+		return 0;
+	}
+
+	while(cur->left){
+		cur = cur->left;
+	}
+
+	return cur->key;
+}
+
+int find_max(bstnode *root)
+{
+	if(root == NULL){
+		cout << "Tree is empty!" << endl;
+		return 0;
+	}
+
+	while(root->right) {
+		root = root->right;
+	}
+
+	return root->key;
+}

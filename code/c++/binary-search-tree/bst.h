@@ -10,5 +10,7 @@ struct bstnode {
 bstnode* insert(bstnode * root, int data);
 int search(bstnode *root, int data);
 bstnode* create_node(int data);
+int find_min(bstnode *root);
+int find_max(bstnode *root);
 
 #endif
