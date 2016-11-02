@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <queue>
+#include <limits.h>
 #include "bst.h"
 
 using namespace std;
@@ -42,7 +43,7 @@ int search(bstnode *root, int key)
 	}
 }
 
-int find_min(bstnode *root)
+bstnode *find_min(bstnode *root)
 {
 	struct bstnode* cur = root;
 
@@ -55,10 +56,10 @@ int find_min(bstnode *root)
 		cur = cur->left;
 	}
 
-	return cur->key;
+	return cur;
 }
 
-int find_max(bstnode *root)
+bstnode* find_max(bstnode *root)
 {
 	if(root == NULL){
 		cout << "Tree is empty!" << endl;
@@ -69,7 +70,7 @@ int find_max(bstnode *root)
 		root = root->right;
 	}
 
-	return root->key;
+	return root;
 }
 
 int find_height(bstnode *root)
@@ -88,6 +89,16 @@ void inorder(bstnode *root)
 	inorder(root->left);
 	cout << root->key << "\t" ;
 	inorder(root->right);
+}
+
+void descorder(bstnode *root)
+{
+	if(root == NULL)
+		return;
+
+	inorder(root->right);
+	cout << root->key << "\t" ;
+	inorder(root->left);
 }
 
 void preorder(bstnode *root)
@@ -136,4 +147,67 @@ void levelorder(bstnode *root)
  	}
 
  	return;
+}
+
+int is_bst_util(bstnode *node, int min, int max)
+{
+	if (node==NULL){
+		return 1;
+	}
+
+	if (node->key < min || node->key > max) {
+		return 0;
+	}
+
+	return is_bst_util(node->left, min, node->key-1) && is_bst_util(node->right, node->key+1, max);
+}
+
+int is_bst(bstnode *root)
+{
+	return is_bst_util(root, INT_MIN, INT_MAX);
+}
+
+bstnode* delete_value(bstnode *root, int data)
+{
+	if(root == NULL)
+		return root;
+
+	else if (data < root->key)
+		root->left = delete_value(root->left, data);
+
+	else if(data > root->key)
+		root->right = delete_value(root->right, data);
+
+	else {
+		if(root->right == NULL && root->left == NULL){
+			free(root);
+			root = NULL;
+		} else if(root->left = NULL) {
+			bstnode *cur = root;
+			root = root->right;
+			free(cur);
+		} else if(root->right ==NULL) {
+			bstnode *cur = root;
+			root = root->left;
+			free(cur);
+		} else {
+			bstnode *cur = find_min(root->right);
+			root->key = cur->key;
+			root->right = delete_value(root->right, cur->key);
+		}
+	}
+
+	return root;
+}
+
+void delete_tree(bstnode *root)
+{
+	if (root == NULL)
+		return;
+
+	delete_tree(root->left);
+	delete_tree(root->right);
+
+	cout << "Deleting... " << root->key << endl;
+	free(root);
 }

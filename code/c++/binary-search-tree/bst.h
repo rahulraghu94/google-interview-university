@@ -10,8 +10,8 @@ struct bstnode {
 bstnode* insert(bstnode * root, int data);
 int search(bstnode *root, int data);
 bstnode* create_node(int data);
-int find_min(bstnode *root);
-int find_max(bstnode *root);
+bstnode* find_min(bstnode *root);
+bstnode* find_max(bstnode *root);
 
 /*
  * Height of a node: Length of longest path from that node (if the node is the
@@ -34,6 +34,14 @@ int find_height(bstnode *root);
 void inorder(bstnode *root);
 void preorder(bstnode *root);
 void postorder(bstnode *root);
+void descorder(bstnode *root);
 void levelorder(bstnode *root);
+
+int is_bst(bstnode *root);
+int is_bst_util(bstnode *root, int min, int max);
+
+bstnode* delete_value(bstnode *root, int value);
+
+void delete_tree(bstnode *root);
 
 #endif
