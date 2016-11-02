@@ -35,6 +35,8 @@ int main()
 	preorder(root);
 	cout << endl << "Postorder: " << endl;
 	postorder(root);
+	cout << endl << "Levelorder: " << endl;
+	levelorder(root);
 
 	return 0;
 }

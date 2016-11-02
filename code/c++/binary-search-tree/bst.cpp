@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <queue>
 #include "bst.h"
 
 using namespace std;
@@ -109,4 +110,30 @@ void postorder(bstnode *root)
 	postorder(root->right);
 	cout << root->key << "\t" ;
 
+}
+
+void levelorder(bstnode *root)
+{
+	queue<bstnode *> q;
+
+	if(root == NULL)
+		return;
+
+	q.push(root);
+
+	while(!q.empty()){
+		bstnode *cur = q.front();
+
+		cout << cur->key << "\t";
+
+		if(cur->left)
+			q.push(cur->left);
+
+		if(cur->right)
+			q.push(cur->right);
+
+		q.pop();
+ 	}
+
+ 	return;
 }
