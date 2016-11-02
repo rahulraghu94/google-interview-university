@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include "bst.h"
 
 using namespace std;
@@ -68,4 +69,12 @@ int find_max(bstnode *root)
 	}
 
 	return root->key;
+}
+
+int find_height(bstnode *root)
+{
+	if(root == NULL)
+		return -1;
+
+	return max(find_height(root->left), find_height(root->right)) +1;
 }

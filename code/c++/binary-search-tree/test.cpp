@@ -25,6 +25,7 @@ int main()
 
 	cout << "Minimum: " << find_min(root) << endl;
 	cout << "Maximum: " << find_max(root) << endl;
+	cout << "Height of the tree: " << find_height(root) << endl;
 
 	return 0;
 }
