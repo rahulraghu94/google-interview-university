@@ -566,7 +566,7 @@ Sometimes the classes are not in session so you have to wait a couple of months,
 - [X] [Quicksort (video)](https://www.youtube.com/watch?v=y_G9BkAm6B8&index=4&list=PL89B61F78B552C1AB)
 - [X] [Selection Sort (video)](https://www.youtube.com/watch?v=6nDMgr0-Yyo&index=8&list=PL89B61F78B552C1AB)
 
-- [ ] Stanford lectures on sorting:
+- [X] Stanford lectures on sorting:
     - [X] [Lecture 15 | Programming Abstractions (video)](https://www.youtube.com/watch?v=ENp00xylP7c&index=15&list=PLFE6E58F856038C69)
     - [X] [Lecture 16 | Programming Abstractions (video)](https://www.youtube.com/watch?v=y4M9IVgrVKo&index=16&list=PLFE6E58F856038C69)
 
@@ -574,20 +574,20 @@ Sometimes the classes are not in session so you have to wait a couple of months,
     - [X] [Algorithms - Sorting - Lecture 2 (video)](https://www.youtube.com/watch?v=odNJmw5TOEE&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=2)
     - [X] [Algorithms - Sorting II - Lecture 3 (video)](https://www.youtube.com/watch?v=hj8YKFTFKEE&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=3)
 
-- [ ] - Merge sort code:
-    - [ ] [Using output array](http://www.cs.yale.edu/homes/aspnes/classes/223/examples/sorting/mergesort.c)
-    - [ ] [In-place](https://github.com/jwasham/practice-cpp/blob/master/merge_sort/merge_sort.cc)
-- [ ] - Quick sort code:
-    - [ ] [Implementation](http://www.cs.yale.edu/homes/aspnes/classes/223/examples/randomization/quick.c)
-    - [ ] [Implementation](https://github.com/jwasham/practice-c/blob/master/quick_sort/quick_sort.c)
+- [X] - Merge sort code:
+    - [X] [Using output array](http://www.cs.yale.edu/homes/aspnes/classes/223/examples/sorting/mergesort.c)
+    - [X] [In-place](https://github.com/jwasham/practice-cpp/blob/master/merge_sort/merge_sort.cc)
+- [X] - Quick sort code:
+    - [X] [Implementation](http://www.cs.yale.edu/homes/aspnes/classes/223/examples/randomization/quick.c)
+    - [X] [Implementation](https://github.com/jwasham/practice-c/blob/master/quick_sort/quick_sort.c)
 
-- [ ] Implement:
-    - [ ] Mergesort: O(n log n) average and worst case
-    - [ ] Quicksort O(n log n) average case
+- [X] Implement:
+    - [X] Mergesort: O(n log n) average and worst case
+    - [X} Quicksort O(n log n) average case
     - Selection sort and insertion sort are both O(n^2) average and worst case
     - For heapsort, see Heap data structure above.
 
-- [ ] For curiosity - not required:
+- [X] For curiosity - not required:
     - [X] [Radix Sort](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#radixSort)
     - [X] [Radix Sort (video)](https://www.youtube.com/watch?v=xhr26ia4k38)
     - [X] [Radix Sort, Counting Sort (linear time given constraints) (video)](https://www.youtube.com/watch?v=Nz1KZXbghj8&index=7&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
@@ -610,12 +610,12 @@ Graphs can be used to represent many problems in computer science, so this secti
 - [X] Skiena Lectures - great intro:
     - [X] [CSE373 2012 - Lecture 11 - Graph Data Structures (video)](https://www.youtube.com/watch?v=OiXxhDrFruw&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&index=11)
     - [X] [CSE373 2012 - Lecture 12 - Breadth-First Search (video)](https://www.youtube.com/watch?v=g5vF8jscteo&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&index=12)
-    - [ ] [CSE373 2012 - Lecture 13 - Graph Algorithms (video)](https://www.youtube.com/watch?v=S23W6eTcqdY&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&index=13)
-    - [ ] [CSE373 2012 - Lecture 14 - Graph Algorithms (con't) (video)](https://www.youtube.com/watch?v=WitPBKGV0HY&index=14&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b)
-    - [ ] [CSE373 2012 - Lecture 15 - Graph Algorithms (con't 2) (video)](https://www.youtube.com/watch?v=ia1L30l7OIg&index=15&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b)
-    - [ ] [CSE373 2012 - Lecture 16 - Graph Algorithms (con't 3) (video)](https://www.youtube.com/watch?v=jgDOQq6iWy8&index=16&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b)
+    - [X] [CSE373 2012 - Lecture 13 - Graph Algorithms (video)](https://www.youtube.com/watch?v=S23W6eTcqdY&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&index=13)
+    - [X] [CSE373 2012 - Lecture 14 - Graph Algorithms (con't) (video)](https://www.youtube.com/watch?v=WitPBKGV0HY&index=14&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b)
+    - [X] [CSE373 2012 - Lecture 15 - Graph Algorithms (con't 2) (video)](https://www.youtube.com/watch?v=ia1L30l7OIg&index=15&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b)
+    - [X] [CSE373 2012 - Lecture 16 - Graph Algorithms (con't 3) (video)](https://www.youtube.com/watch?v=jgDOQq6iWy8&index=16&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b)
 
-- [ ] Graphs (review and more):
+- [X] Graphs (review and more):
 
     - [ ] [6.006 Single-Source Shortest Paths Problem (video)](https://www.youtube.com/watch?v=Aa2sqUhIn-E&index=15&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
     - [ ] [6.006 Dijkstra (video)](https://www.youtube.com/watch?v=2E7MmKv0Y24&index=16&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
