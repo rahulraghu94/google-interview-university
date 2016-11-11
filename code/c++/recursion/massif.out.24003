@@ -1,0 +1,64 @@
+desc: (none)
+cmd: ./fact
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2147883
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2261623
+mem_heap_B=73728
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2285343
+mem_heap_B=73728
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=peak
+n2: 73728 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4EB9A1E: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:123)
+  n1: 72704 0x400F4F8: call_init.part.0 (in /usr/lib/ld-2.24.so)
+   n1: 72704 0x400F609: _dl_init (in /usr/lib/ld-2.24.so)
+    n0: 72704 0x4000DA8: ??? (in /usr/lib/ld-2.24.so)
+ n1: 1024 0x5737AB0: _IO_file_doallocate (in /usr/lib/libc-2.24.so)
+  n1: 1024 0x5745AD4: _IO_doallocbuf (in /usr/lib/libc-2.24.so)
+   n1: 1024 0x5744E36: _IO_file_overflow@@GLIBC_2.2.5 (in /usr/lib/libc-2.24.so)
+    n1: 1024 0x5743F04: _IO_file_xsputn@@GLIBC_2.2.5 (in /usr/lib/libc-2.24.so)
+     n1: 1024 0x57390F9: fwrite (in /usr/lib/libc-2.24.so)
+      n1: 1024 0x4F40984: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (streambuf:451)
+       n1: 1024 0x4F40CE5: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (ostream:561)
+        n0: 1024 0x400855: main (factorial_tail.cpp:19)
+#-----------
+snapshot=4
+#-----------
+time=2285343
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=2287034
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
