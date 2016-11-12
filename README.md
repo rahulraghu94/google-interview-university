@@ -1,15 +1,4 @@
-# Google Interview University
-
-## What is it?
-
-This is my multi-month study plan for going from web developer (self-taught, no CS degree) to Google software engineer.
-
-This long list has been extracted and expanded from **Google's coaching notes**, so these are the things you need to know.
-There are extra items I added at the bottom that may come up in the interview or be helpful in solving a problem. Many items are from
-Steve Yegge's "[Get that job at Google](http://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html)" and are reflected
-sometimes word-for-word in Google's coaching notes.
-
----
+# What Every CS Engineer should know!
 
 ## Table of Contents
 
@@ -69,45 +58,6 @@ sometimes word-for-word in Google's coaching notes.
 - [Have questions for the interviewer](#have-questions-for-the-interviewer)
 - [Once You've Got The Job](#once-youve-got-the-job)
 
----------------- Everything below this point is optional ----------------
-
-- [Additional Books](#additional-books)
-- [Additional Learning](#additional-learning)
-    - [Unicode](#unicode)
-    - [Endianness](#endianness)
-    - [Emacs and vi(m)](#emacs-and-vim)
-    - [Unix command line tools](#unix-command-line-tools)
-    - [Information theory](#information-theory)
-    - [Parity & Hamming Code](#parity--hamming-code)
-    - [Entropy](#entropy)
-    - [Cryptography](#cryptography)
-    - [Compression](#compression)
-    - [Networking](#networking)
-    - [Computer Security](#computer-security)
-    - [Garbage collection](#garbage-collection)
-    - [Parallel Programming](#parallel-programming)
-    - [Design patterns](#design-patterns)
-    - [Messaging, Serialization, and Queueing Systems](#messaging-serialization-and-queueing-systems)
-    - [Fast Fourier Transform](#fast-fourier-transform)
-    - [Bloom Filter](#bloom-filter)
-    - [van Emde Boas Trees](#van-emde-boas-trees)
-    - [Augmented Data Structures](#augmented-data-structures)
-    - [Skip lists](#skip-lists)
-    - [Network Flows](#network-flows)
-    - [Disjoint Sets & Union Find](#disjoint-sets--union-find)
-    - [Math for Fast Processing](#math-for-fast-processing)
-    - [Treap](#treap)
-    - [Linear Programming](#linear-programming)
-    - [Geometry, Convex hull](#geometry-convex-hull)
-    - [Discrete math](#discrete-math)
-    - [Machine Learning](#machine-learning)
-    - [Go](#go)
-- [Additional Detail on Some Subjects](#additional-detail-on-some-subjects)
-- [Video Series](#video-series)
-- [Computer Science Courses](#computer-science-courses)
-
----
-
 ## About Google
 
 - [ ] For students - [Google Careers: Technical Development Guide](https://www.google.com/about/careers/students/guide-to-technical-development.html)
@@ -124,15 +74,6 @@ sometimes word-for-word in Google's coaching notes.
     - [ ] [The Deep Mind Of Demis Hassabis](https://backchannel.com/the-deep-mind-of-demis-hassabis-156112890d8a)
 - [ ] [Book: How Google Works](https://www.amazon.com/How-Google-Works-Eric-Schmidt/dp/1455582344)
 - [ ] [Made by Google announcement - Oct 2016 (video)](https://www.youtube.com/watch?v=q4y0KOeXViI)
-
-## About Video Resources
-
-Some videos are available only by enrolling in a Coursera, EdX, or Lynda.com class. These are called MOOCs.
-Sometimes the classes are not in session so you have to wait a couple of months, so you have no access. Lynda.com courses are not free.
-
-    I'd appreciate your help to add free and always-available public sources, such as YouTube videos to accompany the online course videos.
-    I like using university lectures.
-
 
 ## Interview Process & General Interview Prep
 
@@ -668,15 +609,10 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
     - This subject can be pretty difficult, as each DP soluble problem must be defined as a recursion relation, and coming up with it can be tricky.
     - I suggest looking at many examples of DP problems until you have a solid understanding of the pattern involved.
     - [ ] Videos:
-        - the Skiena videos can be hard to follow since he sometimes uses the whiteboard, which is too small to see
-        - [ ] [Skiena: CSE373 2012 - Lecture 19 - Introduction to Dynamic Programming (video)](https://youtu.be/Qc2ieXRgR0k?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=1718)
-        - [ ] [Skiena: CSE373 2012 - Lecture 20 - Edit Distance (video)](https://youtu.be/IsmMhMdyeGY?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=2749)
-        - [ ] [Skiena: CSE373 2012 - Lecture 21 - Dynamic Programming Examples (video)](https://youtu.be/o0V9eYF4UI8?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=406)
-        - [ ] [Skiena: CSE373 2012 - Lecture 22 - Applications of Dynamic Programming (video)](https://www.youtube.com/watch?v=dRbMC1Ltl3A&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&index=22)
-        - [ ] [Simonson: Dynamic Programming 0 (starts at 59:18) (video)](https://youtu.be/J5aJEcOr6Eo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3558)
+        - [X] [Simonson: Dynamic Programming 0 (starts at 59:18) (video)](https://youtu.be/J5aJEcOr6Eo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3558)
         - [ ] [Simonson: Dynamic Programming I - Lecture 11 (video)](https://www.youtube.com/watch?v=0EzHjQ_SOeU&index=11&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm)
         - [ ] [Simonson: Dynamic programming II - Lecture 12 (video)](https://www.youtube.com/watch?v=v1qiRwuJU7g&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=12)
-        - [ ] List of individual DP problems (each is short):
+        - [X] List of individual DP problems (each is short):
             [Dynamic Programming (video)](https://www.youtube.com/playlist?list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
     - [ ] Yale Lecture notes:
         - [ ] [Dynamic Programming](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#dynamicProgramming)
